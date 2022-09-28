@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */; };
+		03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */; };
+		03EEDC9728DD7F2F00C5FEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */; };
+		03EEDC9A28DD7F2F00C5FEC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EEDC9928DD7F2F00C5FEC3 /* Preview Assets.xcassets */; };
+		03EEDC9C28DD7F2F00C5FEC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9B28DD7F2F00C5FEC3 /* Persistence.swift */; };
+		03EEDC9F28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */; };
+		03EEDCA928DD7F2F00C5FEC3 /* kaspiShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDCA828DD7F2F00C5FEC3 /* kaspiShopTests.swift */; };
+		03EEDCB328DD7F2F00C5FEC3 /* kaspiShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDCB228DD7F2F00C5FEC3 /* kaspiShopUITests.swift */; };
+		03EEDCB528DD7F2F00C5FEC3 /* kaspiShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDCB428DD7F2F00C5FEC3 /* kaspiShopUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03EEDCA528DD7F2F00C5FEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EEDC8728DD7F2D00C5FEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EEDC8E28DD7F2D00C5FEC3;
+			remoteInfo = kaspiShop;
+		};
+		03EEDCAF28DD7F2F00C5FEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EEDC8728DD7F2D00C5FEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EEDC8E28DD7F2D00C5FEC3;
+			remoteInfo = kaspiShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EEDC8F28DD7F2D00C5FEC3 /* kaspiShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaspiShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaspiShopApp.swift; sourceTree = "<group>"; };
+		03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03EEDC9928DD7F2F00C5FEC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03EEDC9B28DD7F2F00C5FEC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		03EEDC9E28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kaspiShop.xcdatamodel; sourceTree = "<group>"; };
+		03EEDCA428DD7F2F00C5FEC3 /* kaspiShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kaspiShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EEDCA828DD7F2F00C5FEC3 /* kaspiShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaspiShopTests.swift; sourceTree = "<group>"; };
+		03EEDCAE28DD7F2F00C5FEC3 /* kaspiShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kaspiShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EEDCB228DD7F2F00C5FEC3 /* kaspiShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaspiShopUITests.swift; sourceTree = "<group>"; };
+		03EEDCB428DD7F2F00C5FEC3 /* kaspiShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaspiShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03EEDC8C28DD7F2D00C5FEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCA128DD7F2F00C5FEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCAB28DD7F2F00C5FEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EEDC8628DD7F2D00C5FEC3 = {
+			isa = PBXGroup;
+			children = (
+				03EEDC9128DD7F2D00C5FEC3 /* kaspiShop */,
+				03EEDCA728DD7F2F00C5FEC3 /* kaspiShopTests */,
+				03EEDCB128DD7F2F00C5FEC3 /* kaspiShopUITests */,
+				03EEDC9028DD7F2D00C5FEC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03EEDC9028DD7F2D00C5FEC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EEDC8F28DD7F2D00C5FEC3 /* kaspiShop.app */,
+				03EEDCA428DD7F2F00C5FEC3 /* kaspiShopTests.xctest */,
+				03EEDCAE28DD7F2F00C5FEC3 /* kaspiShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03EEDC9128DD7F2D00C5FEC3 /* kaspiShop */ = {
+			isa = PBXGroup;
+			children = (
+				03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */,
+				03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */,
+				03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */,
+				03EEDC9B28DD7F2F00C5FEC3 /* Persistence.swift */,
+				03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */,
+				03EEDC9828DD7F2F00C5FEC3 /* Preview Content */,
+			);
+			path = kaspiShop;
+			sourceTree = "<group>";
+		};
+		03EEDC9828DD7F2F00C5FEC3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03EEDC9928DD7F2F00C5FEC3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03EEDCA728DD7F2F00C5FEC3 /* kaspiShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				03EEDCA828DD7F2F00C5FEC3 /* kaspiShopTests.swift */,
+			);
+			path = kaspiShopTests;
+			sourceTree = "<group>";
+		};
+		03EEDCB128DD7F2F00C5FEC3 /* kaspiShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03EEDCB228DD7F2F00C5FEC3 /* kaspiShopUITests.swift */,
+				03EEDCB428DD7F2F00C5FEC3 /* kaspiShopUITestsLaunchTests.swift */,
+			);
+			path = kaspiShopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03EEDC8E28DD7F2D00C5FEC3 /* kaspiShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEDCB828DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShop" */;
+			buildPhases = (
+				03EEDC8B28DD7F2D00C5FEC3 /* Sources */,
+				03EEDC8C28DD7F2D00C5FEC3 /* Frameworks */,
+				03EEDC8D28DD7F2D00C5FEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kaspiShop;
+			productName = kaspiShop;
+			productReference = 03EEDC8F28DD7F2D00C5FEC3 /* kaspiShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03EEDCA328DD7F2F00C5FEC3 /* kaspiShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEDCBB28DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShopTests" */;
+			buildPhases = (
+				03EEDCA028DD7F2F00C5FEC3 /* Sources */,
+				03EEDCA128DD7F2F00C5FEC3 /* Frameworks */,
+				03EEDCA228DD7F2F00C5FEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EEDCA628DD7F2F00C5FEC3 /* PBXTargetDependency */,
+			);
+			name = kaspiShopTests;
+			productName = kaspiShopTests;
+			productReference = 03EEDCA428DD7F2F00C5FEC3 /* kaspiShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03EEDCAD28DD7F2F00C5FEC3 /* kaspiShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEDCBE28DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShopUITests" */;
+			buildPhases = (
+				03EEDCAA28DD7F2F00C5FEC3 /* Sources */,
+				03EEDCAB28DD7F2F00C5FEC3 /* Frameworks */,
+				03EEDCAC28DD7F2F00C5FEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EEDCB028DD7F2F00C5FEC3 /* PBXTargetDependency */,
+			);
+			name = kaspiShopUITests;
+			productName = kaspiShopUITests;
+			productReference = 03EEDCAE28DD7F2F00C5FEC3 /* kaspiShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03EEDC8728DD7F2D00C5FEC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					03EEDC8E28DD7F2D00C5FEC3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					03EEDCA328DD7F2F00C5FEC3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 03EEDC8E28DD7F2D00C5FEC3;
+					};
+					03EEDCAD28DD7F2F00C5FEC3 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 03EEDC8E28DD7F2D00C5FEC3;
+					};
+				};
+			};
+			buildConfigurationList = 03EEDC8A28DD7F2D00C5FEC3 /* Build configuration list for PBXProject "kaspiShop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03EEDC8628DD7F2D00C5FEC3;
+			productRefGroup = 03EEDC9028DD7F2D00C5FEC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03EEDC8E28DD7F2D00C5FEC3 /* kaspiShop */,
+				03EEDCA328DD7F2F00C5FEC3 /* kaspiShopTests */,
+				03EEDCAD28DD7F2F00C5FEC3 /* kaspiShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03EEDC8D28DD7F2D00C5FEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EEDC9A28DD7F2F00C5FEC3 /* Preview Assets.xcassets in Resources */,
+				03EEDC9728DD7F2F00C5FEC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCA228DD7F2F00C5FEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCAC28DD7F2F00C5FEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03EEDC8B28DD7F2D00C5FEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EEDC9F28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld in Sources */,
+				03EEDC9C28DD7F2F00C5FEC3 /* Persistence.swift in Sources */,
+				03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */,
+				03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCA028DD7F2F00C5FEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EEDCA928DD7F2F00C5FEC3 /* kaspiShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEDCAA28DD7F2F00C5FEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EEDCB328DD7F2F00C5FEC3 /* kaspiShopUITests.swift in Sources */,
+				03EEDCB528DD7F2F00C5FEC3 /* kaspiShopUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03EEDCA628DD7F2F00C5FEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EEDC8E28DD7F2D00C5FEC3 /* kaspiShop */;
+			targetProxy = 03EEDCA528DD7F2F00C5FEC3 /* PBXContainerItemProxy */;
+		};
+		03EEDCB028DD7F2F00C5FEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EEDC8E28DD7F2D00C5FEC3 /* kaspiShop */;
+			targetProxy = 03EEDCAF28DD7F2F00C5FEC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03EEDCB628DD7F2F00C5FEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03EEDCB728DD7F2F00C5FEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03EEDCB928DD7F2F00C5FEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03EEDCBA28DD7F2F00C5FEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03EEDCBC28DD7F2F00C5FEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kaspiShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kaspiShop";
+			};
+			name = Debug;
+		};
+		03EEDCBD28DD7F2F00C5FEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kaspiShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kaspiShop";
+			};
+			name = Release;
+		};
+		03EEDCBF28DD7F2F00C5FEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kaspiShop;
+			};
+			name = Debug;
+		};
+		03EEDCC028DD7F2F00C5FEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.kbtu.kaspiShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kaspiShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03EEDC8A28DD7F2D00C5FEC3 /* Build configuration list for PBXProject "kaspiShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEDCB628DD7F2F00C5FEC3 /* Debug */,
+				03EEDCB728DD7F2F00C5FEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEDCB828DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEDCB928DD7F2F00C5FEC3 /* Debug */,
+				03EEDCBA28DD7F2F00C5FEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEDCBB28DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEDCBC28DD7F2F00C5FEC3 /* Debug */,
+				03EEDCBD28DD7F2F00C5FEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEDCBE28DD7F2F00C5FEC3 /* Build configuration list for PBXNativeTarget "kaspiShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEDCBF28DD7F2F00C5FEC3 /* Debug */,
+				03EEDCC028DD7F2F00C5FEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03EEDC9E28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodel */,
+			);
+			currentVersion = 03EEDC9E28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodel */;
+			path = kaspiShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03EEDC8728DD7F2D00C5FEC3 /* Project object */;
+}
