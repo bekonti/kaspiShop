@@ -10,43 +10,74 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+    @State var phoneNumber = ""
+    @State var password = ""
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
+            VStack{
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150,height:150)
+                VStack{
+                    TextField("Phone Number", text: $phoneNumber)
+                        .padding()
+                        .background(Color(.secondarySystemFill))
+        
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .background(Color(.secondarySystemFill))
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("SIGN IN")
+                            .foregroundColor(Color.white)
+                            .frame(width: 200,height: 50)
+                            .cornerRadius(20)
+                            .background(Color.blue)
+                    })
                 }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+//            List {
+//                ForEach(items) { item in
+//                    NavigationLink {
+//                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                    } label: {
+//                        Text(item.timestamp!, formatter: itemFormatter)
+//                    }
+//                }
+//                .onDelete(perform: deleteItems)
+//            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: chat){
+//                        Label("Chats", systemImage: "sun.min")
+//                    }
+//                    //                    EditButton()
+//                }
+//                ToolbarItem {
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "heart")
+//                    }
+//                }
+//
+//            }
+//            Text("Select an item")
         }
     }
-
+    
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
-
+            
             do {
                 try viewContext.save()
             } catch {
@@ -56,6 +87,10 @@ struct ContentView: View {
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
         }
+    }
+    
+    private func chat(){
+        
     }
 
     private func deleteItems(offsets: IndexSet) {
