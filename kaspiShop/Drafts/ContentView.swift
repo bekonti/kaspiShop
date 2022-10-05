@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+//import iPhoneNumberField
 import CoreData
+import Firebase
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -17,9 +19,12 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     @State var phoneNumber = ""
     @State var password = ""
+    @State var email = ""
+    
+    @State private var path = NavigationPath()
     
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $path) {
             VStack{
                 Image("logo")
                     .resizable()
@@ -71,6 +76,10 @@ struct ContentView: View {
 //            }
 //            Text("Select an item")
         }
+    }
+    
+    func register(){
+//        Auth.auth().createUser(withEmail: email, password: password)
     }
     
     private func addItem() {
