@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033001A628F1528C00162758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 033001A528F1528C00162758 /* GoogleService-Info.plist */; };
 		03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */; };
 		03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */; };
 		03EEDC9728DD7F2F00C5FEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033001A528F1528C00162758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03EEDC8F28DD7F2D00C5FEC3 /* kaspiShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaspiShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaspiShopApp.swift; sourceTree = "<group>"; };
 		03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */,
 				03FF888A28ED77B00099AB3A /* Auth.swift */,
 				03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */,
-				033001A528F1528C00162758 /* GoogleService-Info.plist */,
 				03EEDC9B28DD7F2F00C5FEC3 /* Persistence.swift */,
 				03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */,
 				03EEDC9828DD7F2F00C5FEC3 /* Preview Content */,
@@ -274,7 +271,6 @@
 			files = (
 				03EEDC9A28DD7F2F00C5FEC3 /* Preview Assets.xcassets in Resources */,
 				03EEDC9728DD7F2F00C5FEC3 /* Assets.xcassets in Resources */,
-				033001A628F1528C00162758 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
