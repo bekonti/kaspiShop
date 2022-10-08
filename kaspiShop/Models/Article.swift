@@ -21,4 +21,5 @@ extension Article {
         .init(title: "Jokes", author: "Joker"),
         .init(title: "Dad 2", author: "Author 2")
     ]
+    
 }

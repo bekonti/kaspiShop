@@ -20,6 +20,8 @@
 		03FF888228ECB2F60099AB3A /* AuthDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF888128ECB2F60099AB3A /* AuthDemo.swift */; };
 		03FF888928ECBCB40099AB3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF888828ECBCB40099AB3A /* User.swift */; };
 		03FF888B28ED77B00099AB3A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF888A28ED77B00099AB3A /* Auth.swift */; };
+		A41C96B228F15A4A00F593DF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C96B128F15A4A00F593DF /* MainPage.swift */; };
+		A41C96B428F17CF000F593DF /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C96B328F17CF000F593DF /* Goods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		03FF888128ECB2F60099AB3A /* AuthDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDemo.swift; sourceTree = "<group>"; };
 		03FF888828ECBCB40099AB3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		03FF888A28ED77B00099AB3A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A41C96B128F15A4A00F593DF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPage.swift; path = kaspiShop/MainPage.swift; sourceTree = SOURCE_ROOT; };
+		A41C96B328F17CF000F593DF /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				03FF887728EC38B50099AB3A /* Models */,
 				03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */,
 				03FF888A28ED77B00099AB3A /* Auth.swift */,
+				A41C96B128F15A4A00F593DF /* MainPage.swift */,
 				03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */,
 				03EEDC9B28DD7F2F00C5FEC3 /* Persistence.swift */,
 				03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */,
@@ -148,6 +153,7 @@
 			children = (
 				03FF887828EC38D80099AB3A /* Article.swift */,
 				03FF888828ECBCB40099AB3A /* User.swift */,
+				A41C96B328F17CF000F593DF /* Goods.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,11 +303,13 @@
 			files = (
 				03EEDC9F28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld in Sources */,
 				03FF888228ECB2F60099AB3A /* AuthDemo.swift in Sources */,
+				A41C96B228F15A4A00F593DF /* MainPage.swift in Sources */,
 				03EEDC9C28DD7F2F00C5FEC3 /* Persistence.swift in Sources */,
 				03FF887928EC38D80099AB3A /* Article.swift in Sources */,
 				03FF888928ECBCB40099AB3A /* User.swift in Sources */,
 				03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */,
 				03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */,
+				A41C96B428F17CF000F593DF /* Goods.swift in Sources */,
 				03FF888B28ED77B00099AB3A /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
-				DEVELOPMENT_TEAM = 78352D7TB2;
+				DEVELOPMENT_TEAM = J476T2N565;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -490,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
-				DEVELOPMENT_TEAM = 78352D7TB2;
+				DEVELOPMENT_TEAM = J476T2N565;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
