@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import Firebase
+//import Firebase
 
 @main
 struct kaspiShopApp: App {
     
-    init(){
-        FirebaseApp.configure()
-    }
+//    init(){
+//        FirebaseApp.configure()
+//    }
     
     let persistenceController = PersistenceController.shared
 // MARK: main where is body started
