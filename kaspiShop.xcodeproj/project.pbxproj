@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033001A928F283A300162758 /* CleanUI in Frameworks */ = {isa = PBXBuildFile; productRef = 033001A828F283A300162758 /* CleanUI */; };
 		03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9228DD7F2D00C5FEC3 /* kaspiShopApp.swift */; };
 		03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EEDC9428DD7F2D00C5FEC3 /* ContentView.swift */; };
 		03EEDC9728DD7F2F00C5FEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EEDC9628DD7F2F00C5FEC3 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033001A928F283A300162758 /* CleanUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,7 @@
 			);
 			name = kaspiShop;
 			packageProductDependencies = (
+				033001A828F283A300162758 /* CleanUI */,
 			);
 			productName = kaspiShop;
 			productReference = 03EEDC8F28DD7F2D00C5FEC3 /* kaspiShop.app */;
@@ -258,6 +261,7 @@
 			);
 			mainGroup = 03EEDC8628DD7F2D00C5FEC3;
 			packageReferences = (
+				033001A728F283A300162758 /* XCRemoteSwiftPackageReference "CleanUI" */,
 			);
 			productRefGroup = 03EEDC9028DD7F2D00C5FEC3 /* Products */;
 			projectDirPath = "";
@@ -469,7 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
-				DEVELOPMENT_TEAM = J476T2N565;
+				DEVELOPMENT_TEAM = 78352D7TB2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -498,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kaspiShop/Preview Content\"";
-				DEVELOPMENT_TEAM = J476T2N565;
+				DEVELOPMENT_TEAM = 78352D7TB2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -631,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		033001A728F283A300162758 /* XCRemoteSwiftPackageReference "CleanUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/knoggl/CleanUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		033001A828F283A300162758 /* CleanUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 033001A728F283A300162758 /* XCRemoteSwiftPackageReference "CleanUI" */;
+			productName = CleanUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		03EEDC9D28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld */ = {

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "IMG_0091.PNG",
+      "filename" : "Screen Shot 2022-09-29 at 11.22.50.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Screen Shot 2022-09-29 at 11.22.50 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Screen Shot 2022-09-29 at 11.22.50 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CleanUI
 
 struct Auth: View {
     var body: some View {
@@ -38,7 +39,7 @@ struct Home : View {
                     
                 Image("logo")
                     .resizable()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 150, height: 130)
                 
                 ZStack{
                     SignUp(index: self.$index)
@@ -83,6 +84,10 @@ struct Login : View{
     
     @State var email = ""
     @State var pass = ""
+    @State private var confirmationMessage = ""
+    @State private var isAuthenticated = false
+    @State private var authorizationToken = ""
+    
     @Binding var index : Int
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -107,7 +112,7 @@ struct Login : View{
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
                             .foregroundColor(Color("Color1"))
-                        TextField("Email Address", text: self.$email)
+                        TextField("Username", text: self.$email)
                     }
                     
                     Divider().background(Color.white.opacity(0.5))
@@ -155,7 +160,15 @@ struct Login : View{
             // Button...
             Button(action: {
                 
-            }) {
+                Task {
+                    await login()
+                    
+                    if isAuthenticated {
+                        CUNavigation.pop()
+                    }
+                }
+                }
+            ) {
                 Text("LOGIN")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
@@ -170,6 +183,57 @@ struct Login : View{
         }
     }
 
+}
+
+extension Login {
+    @MainActor func login() async{
+        let user  = User(login: email, password: pass)
+        print("login: \(user.login) pswd: \(user.password)")
+        guard let encoded = try? JSONEncoder().encode(user) else{
+            print("Fail encoded")
+            return
+        }
+
+        let url = URL(string:
+        "http://localhost:8080/user"
+//        "http://192.168.1.100:8080/user"
+            )!
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        request.httpBody = Data(encoded)
+
+        do{
+            let(data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+
+            let decoded = try JSONDecoder().decode(User.self, from: data)
+            authorizationToken = decoded.authorizationToken
+            confirmationMessage = "decoded \(self.authorizationToken)" //+ l:\(decoded.login) p:\(decoded.password)"
+            isAuthenticated = true
+            print(confirmationMessage)
+//            CUNavigation.pushToSwiftUiView(MainPage())
+//            self.navigationx
+        }catch {
+            print("Checkout failed.")
+        }
+//        Auth0()
+//            .webAuth()
+//            .start { result in
+//                switch result{
+//                case .failure(let error):
+//                    print("Failed with: \(error)")
+//
+//                case .success(let credentioal):
+//                    self.isAuthenticated = true
+//                    print("Credentials: \(credentioal)")
+//                    print("token: \(credentioal.idToken)")
+//                }
+//            }
+    }
+
+    func logout(){
+        isAuthenticated = false
+    }
 }
 
 //SignUp Page
@@ -270,4 +334,3 @@ struct SignUp : View{
     }
 
 }
-

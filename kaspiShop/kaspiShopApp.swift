@@ -19,7 +19,7 @@ struct kaspiShopApp: App {
 // MARK: main where is body started
     var body: some Scene {
         WindowGroup {
-            Auth()
+            MainPage()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
