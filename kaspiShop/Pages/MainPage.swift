@@ -10,6 +10,8 @@ import CleanUI
 // save token for future activities
 struct MainPage: View {
     @State private var path = NavigationPath()
+    
+    
 
     @State var queryFilter=""
     @State var top = UIApplication.shared.windows.first?.safeAreaInsets.top
@@ -66,7 +68,6 @@ struct MainPage: View {
                         VStack(spacing:15){
                             ForEach(Goods.examples, id:\.self){ i in
                                 
-                                
                                 VStack(spacing: 10){
                                     HStack(spacing: 10){
                                         Image("apple")
@@ -88,6 +89,9 @@ struct MainPage: View {
                                 }
                                 .padding()
                                 .background(Color.white)
+                                .onTapGesture{
+                                    CUNavigation.pushToSwiftUiView(ProductDetail(product:i))
+                                }
                                 
                                 
                             }
@@ -110,3 +114,4 @@ struct MainPage_Previews: PreviewProvider {
         MainPage()
     }
 }
+

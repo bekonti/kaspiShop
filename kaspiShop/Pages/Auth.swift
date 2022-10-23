@@ -8,7 +8,7 @@
 import SwiftUI
 import CleanUI
 
-struct Auth: View {
+struct Auth: View, Hashable {
     var body: some View {
     
         Home()
