@@ -34,10 +34,9 @@ struct Goods: Identifiable, Hashable {
 
 
 
-//extension Goods{
-//    static let examples: [Goods] = [
-//        .init(title: "Apple iphone 13 ", author: "Mark"),
-//        .init(title: "Laptop", author: "Jake"),
-//
-//    ]
-//}
+extension Goods{
+    static let examples: [Goods] = [
+        .init(id: 1, title: "iPhone 13 ", author: "Mark", description: "BEST", price: 1300, brand: "APPLE"),
+        .init(id: 2, title: "Laptop", author: "Jake", description: "MacBook", price: 2000, brand: "APPLE"),
+    ]
+}

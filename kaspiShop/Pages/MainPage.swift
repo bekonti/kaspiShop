@@ -11,8 +11,6 @@ import CleanUI
 struct MainPage: View {
     @State private var path = NavigationPath()
     
-    
-
     @State var queryFilter=""
     @State var top = UIApplication.shared.windows.first?.safeAreaInsets.top
     var body: some View {
