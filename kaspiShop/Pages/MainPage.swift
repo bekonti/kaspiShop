@@ -10,6 +10,7 @@ import CleanUI
 // save token for future activities
 struct MainPage: View {
     @State private var path = NavigationPath()
+    @StateObject var basketManager = BasketManager()
     
     @State var queryFilter=""
     @State var top = UIApplication.shared.windows.first?.safeAreaInsets.top
@@ -54,8 +55,16 @@ struct MainPage: View {
                                 .background(Color.black.opacity(0.1))
                                 .clipShape(Circle())
                         }
+                        .toolbar{
+                            NavigationLink {
+                                BasketView()
+                                    .environmentObject(basketManager)
+                            } label:{
+                                Basket(numberOfProducts: basketManager.products.count)
+
+                            }
+                        }
                     }
-                    //                }
                 }
                 .padding(.horizontal)
                 .padding(.top, top)
@@ -81,12 +90,23 @@ struct MainPage: View {
                                             Text("\(45) Min")
                                         }
                                         Spacer(minLength: 0)
+                                        Button{
+                                            basketManager.addToBasket(product: i)
+                                        } label: {
+                                            Image(systemName: "plus")
+                                                .padding(10)
+                                                .foregroundColor(.white)
+                                                .background(.black)
+                                                .cornerRadius(50)
+                                                .padding()
+                                        }
                                     }
                                     Text(i.author)
                                     
                                 }
                                 .padding()
                                 .background(Color.white)
+                                .environmentObject(basketManager)
                                 .onTapGesture{
                                     CUNavigation.pushToSwiftUiView(ProductDetail(product:i))
                                 }
@@ -110,6 +130,7 @@ struct MainPage: View {
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
         MainPage()
+            .environmentObject(BasketManager())
     }
 }
 
