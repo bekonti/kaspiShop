@@ -7,14 +7,14 @@
 
 import Foundation
 class BasketManager: ObservableObject{
-    @Published private(set) var products: [Goods]=[]
-    @Published private(set) var total: Double=0
+    @Published private(set) var products: [Product]=[]
+    @Published private(set) var total: Int=0
     
-    func addToBasket(product: Goods){
+    func addToBasket(product: Product){
         products.append(product)
         total += product.price
     }
-    func removeFromBasket(product: Goods){
+    func removeFromBasket(product: Product){
         products = products.filter{$0.id != product.id}
         total -= product.price
     }

@@ -24,11 +24,14 @@
 		03FF888B28ED77B00099AB3A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF888A28ED77B00099AB3A /* Auth.swift */; };
 		A40D41CB29058DB200E65B36 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D41CA29058DB200E65B36 /* ProductDetail.swift */; };
 		A41C96B228F15A4A00F593DF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C96B128F15A4A00F593DF /* MainPage.swift */; };
-		A41C96B428F17CF000F593DF /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C96B328F17CF000F593DF /* Goods.swift */; };
 		A450DBD6293751F300824637 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DBD5293751F300824637 /* Basket.swift */; };
 		A450DBD829375C8300824637 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DBD729375C8300824637 /* BasketView.swift */; };
 		A450DC12293762C500824637 /* BasketManaget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC11293762C500824637 /* BasketManaget.swift */; };
-		A450DC14293769E300824637 /* GoodsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC13293769E300824637 /* GoodsRow.swift */; };
+		A450DC16293773F000824637 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC15293773F000824637 /* Product.swift */; };
+		A450DC18293775DE00824637 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC17293775DE00824637 /* ProductView.swift */; };
+		A450DC1A29377FF400824637 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC1929377FF400824637 /* ProductRow.swift */; };
+		A4D3029C293F397600D2E696 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3029B293F397600D2E696 /* PaymentButton.swift */; };
+		A4D302A0293F60B600D2E696 /* AddProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3029F293F60B600D2E696 /* AddProducts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +71,14 @@
 		03FF888A28ED77B00099AB3A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		A40D41CA29058DB200E65B36 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		A41C96B128F15A4A00F593DF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPage.swift; path = kaspiShop/Pages/MainPage.swift; sourceTree = SOURCE_ROOT; };
-		A41C96B328F17CF000F593DF /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 		A450DBD5293751F300824637 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		A450DBD729375C8300824637 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 		A450DC11293762C500824637 /* BasketManaget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketManaget.swift; sourceTree = "<group>"; };
-		A450DC13293769E300824637 /* GoodsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsRow.swift; sourceTree = "<group>"; };
+		A450DC15293773F000824637 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A450DC17293775DE00824637 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		A450DC1929377FF400824637 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		A4D3029B293F397600D2E696 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		A4D3029F293F60B600D2E696 /* AddProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,11 +172,12 @@
 			children = (
 				03FF887828EC38D80099AB3A /* Article.swift */,
 				03FF888828ECBCB40099AB3A /* User.swift */,
-				A41C96B328F17CF000F593DF /* Goods.swift */,
 				03DC0808292E62F600E5AECA /* Favourite.swift */,
 				A450DBD5293751F300824637 /* Basket.swift */,
 				A450DC11293762C500824637 /* BasketManaget.swift */,
-				A450DC13293769E300824637 /* GoodsRow.swift */,
+				A450DC15293773F000824637 /* Product.swift */,
+				A450DC17293775DE00824637 /* ProductView.swift */,
+				A450DC1929377FF400824637 /* ProductRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,8 +196,10 @@
 			children = (
 				03FF888A28ED77B00099AB3A /* Auth.swift */,
 				A41C96B128F15A4A00F593DF /* MainPage.swift */,
+				A4D3029F293F60B600D2E696 /* AddProducts.swift */,
 				A40D41CA29058DB200E65B36 /* ProductDetail.swift */,
 				A450DBD729375C8300824637 /* BasketView.swift */,
+				A4D3029B293F397600D2E696 /* PaymentButton.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -336,17 +345,20 @@
 				A41C96B228F15A4A00F593DF /* MainPage.swift in Sources */,
 				03DC0809292E62F600E5AECA /* Favourite.swift in Sources */,
 				A450DBD6293751F300824637 /* Basket.swift in Sources */,
+				A450DC16293773F000824637 /* Product.swift in Sources */,
 				03EEDC9C28DD7F2F00C5FEC3 /* Persistence.swift in Sources */,
 				03FF887928EC38D80099AB3A /* Article.swift in Sources */,
+				A450DC1A29377FF400824637 /* ProductRow.swift in Sources */,
+				A4D3029C293F397600D2E696 /* PaymentButton.swift in Sources */,
 				03FF888928ECBCB40099AB3A /* User.swift in Sources */,
 				03EEDC9528DD7F2D00C5FEC3 /* ContentView.swift in Sources */,
+				A450DC18293775DE00824637 /* ProductView.swift in Sources */,
 				03EEDC9328DD7F2D00C5FEC3 /* kaspiShopApp.swift in Sources */,
-				A41C96B428F17CF000F593DF /* Goods.swift in Sources */,
 				A450DC12293762C500824637 /* BasketManaget.swift in Sources */,
 				A40D41CB29058DB200E65B36 /* ProductDetail.swift in Sources */,
-				A450DC14293769E300824637 /* GoodsRow.swift in Sources */,
 				A450DBD829375C8300824637 /* BasketView.swift in Sources */,
 				03FF888B28ED77B00099AB3A /* Auth.swift in Sources */,
+				A4D302A0293F60B600D2E696 /* AddProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

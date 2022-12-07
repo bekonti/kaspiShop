@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductDetail: View {
-    var product : Goods
+    var product : Product
     @StateObject var favorites = Favorites()
     
         var body: some View {
@@ -33,13 +33,13 @@ struct ProductDetail: View {
                             }).buttonStyle(.borderedProminent)
                             .padding()
                             
-                            Text("brand: "+product.brand)
-                            Text("description: "+product.description)
-                            Text("price: "+product.price.stringRepresentation+"$")
-                            Text("author: " + product.author)
+                            Text("brand: "+product.image)
+                            Text("description: "+product.name)
+                            Text("price: "+"\(product.price)$")
+                            Text("author: " + "\(product.id)#")
                         }
 
-                }.navigationBarTitle(product.title)
+                    }.navigationBarTitle(product.name)
             
             }
         

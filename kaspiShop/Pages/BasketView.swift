@@ -11,7 +11,24 @@ struct BasketView: View {
     @EnvironmentObject var basketManager: BasketManager
     var body: some View {
         ScrollView{
-            Text("Your basket is empty")
+            if(basketManager.products.count>0){
+                ForEach(basketManager.products, id: \.id){
+                    product in
+                    ProductRow(product: product)
+                }
+                HStack{
+                    Text("You basket total is ")
+                    Spacer()
+                    Text("$\(basketManager.total).00")
+                        .bold()
+                }
+                .padding()
+                
+                PaymentButton(action: {})
+                    .padding()
+            }else{
+                Text("Your basket is empty!")
+            }
         }
         .navigationTitle(Text("My cart"))
         .padding(.top)

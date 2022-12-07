@@ -9,9 +9,12 @@ import SwiftUI
 import CleanUI
 // save token for future activities
 struct MainPage: View {
-    @State private var path = NavigationPath()
-    @StateObject var basketManager = BasketManager()
+    //
     
+    var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    @State private var path = NavigationPath()
+    @State private var isPresented: Bool = false
+    @StateObject var basketManager = BasketManager()
     @State var queryFilter=""
     @State var top = UIApplication.shared.windows.first?.safeAreaInsets.top
     var body: some View {
@@ -64,63 +67,35 @@ struct MainPage: View {
 
                             }
                         }
+                        .toolbar{
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button("Add Product"){
+                                    isPresented = true
+                                }
+                            }
+                        }.sheet(isPresented: $isPresented){
+                            AddProducts()
+                        }
                     }
                 }
                 .padding(.horizontal)
                 .padding(.top, top)
                 .background(Color.white)
                 
-                ScrollView(.vertical, showsIndicators: false){
-                    VStack(spacing:0){
-                        VStack(spacing:15){
-                            ForEach(Goods.examples, id:\.self){ i in
-                                
-                                VStack(spacing: 10){
-                                    HStack(spacing: 10){
-                                        Image("apple")
-                                            .resizable()
-                                            .frame(width: 35, height: 35)
-                                            .clipShape(Circle())
-                                        VStack(alignment: .leading, spacing: 4){
-                                            Text(i.title)
-                                                .font(.title2)
-                                                .fontWeight(.semibold)
-                                                .foregroundColor(.black)
-                                            
-                                            Text("\(45) Min")
-                                        }
-                                        Spacer(minLength: 0)
-                                        Button{
-                                            basketManager.addToBasket(product: i)
-                                        } label: {
-                                            Image(systemName: "plus")
-                                                .padding(10)
-                                                .foregroundColor(.white)
-                                                .background(.black)
-                                                .cornerRadius(50)
-                                                .padding()
-                                        }
-                                    }
-                                    Text(i.author)
-                                    
-                                }
-                                .padding()
-                                .background(Color.white)
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20){
+                        ForEach(ProductList, id: \.id) {  product in
+                            ProductView(product: product)
                                 .environmentObject(basketManager)
-                                .onTapGesture{
-                                    CUNavigation.pushToSwiftUiView(ProductDetail(product:i))
+                                .onTapGesture {
+                                    CUNavigation.pushToSwiftUiView(ProductDetail(product: Product(id: product.id, name: product.name, image: product.image, price: product.price)))
                                 }
-                                
-                                
-                            }
+                            
+                            
                         }
                     }
-                    .padding(.top)
-                    
+                    .padding()
                 }
-                .background(Color.black.opacity(0.07))
-                .ignoresSafeArea()
-                
             }
             
         }

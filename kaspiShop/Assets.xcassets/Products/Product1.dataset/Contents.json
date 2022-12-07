@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "Product1.avif",
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.avif"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
