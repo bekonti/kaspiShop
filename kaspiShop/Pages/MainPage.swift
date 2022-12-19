@@ -88,7 +88,11 @@ struct MainPage: View {
                             ProductView(product: product)
                                 .environmentObject(basketManager)
                                 .onTapGesture {
-                                    CUNavigation.pushToSwiftUiView(ProductDetail(product: Product(id: product.id, name: product.name, image: product.image, price: product.price)))
+                                    CUNavigation.pushToSwiftUiView(
+                                        ProductDetail(
+                                            product: Product(id: product.id, name: product.name, image: product.image, price: product.price)
+                                            
+                                                ))
                                 }
                             
                             

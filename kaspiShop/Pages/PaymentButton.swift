@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PassKit
+import CleanUI
 
 struct PaymentButton: View {
     
@@ -52,10 +53,12 @@ extension PaymentButton{
             
             button.addTarget(self, action: #selector(callback(_:)), for: .touchUpInside)
         }
+    
         
         @objc
         func callback(_ sender: Any){
             action()
+            CUNavigation.pushToSwiftUiView(PaymentCompleted())
         }
     }
 }

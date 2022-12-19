@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ProductDetail: View {
     var product : Product
+    @State var review: String = ""
+    @State var rating: Int = 0
+    
     @StateObject var favorites = Favorites()
     
         var body: some View {
@@ -37,6 +40,16 @@ struct ProductDetail: View {
                             Text("description: "+product.name)
                             Text("price: "+"\(product.price)$")
                             Text("author: " + "\(product.id)#")
+                            // Rating for product
+                            VStack{
+                                Section {
+                                    TextEditor(text: $review)
+                                    RatingView(rating: rating)
+                                } header: {
+                                    Text("Write a review")
+                                }
+                            }
+                            
                         }
 
                     }.navigationBarTitle(product.name)
