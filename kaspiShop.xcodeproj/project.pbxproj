@@ -32,6 +32,7 @@
 		A450DC1A29377FF400824637 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450DC1929377FF400824637 /* ProductRow.swift */; };
 		A491DFEC2950D925005F12AF /* PaymentCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A491DFEB2950D925005F12AF /* PaymentCompleted.swift */; };
 		A491DFEE2950E2B5005F12AF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A491DFED2950E2B5005F12AF /* RatingView.swift */; };
+		A4C571CA2952190C00ADD5BC /* ReviewSend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C571C92952190C00ADD5BC /* ReviewSend.swift */; };
 		A4D3029C293F397600D2E696 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3029B293F397600D2E696 /* PaymentButton.swift */; };
 		A4D302A0293F60B600D2E696 /* AddProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3029F293F60B600D2E696 /* AddProducts.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		A450DC1929377FF400824637 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		A491DFEB2950D925005F12AF /* PaymentCompleted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleted.swift; sourceTree = "<group>"; };
 		A491DFED2950E2B5005F12AF /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		A4C571C92952190C00ADD5BC /* ReviewSend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSend.swift; sourceTree = "<group>"; };
 		A4D3029B293F397600D2E696 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		A4D3029F293F60B600D2E696 /* AddProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +205,7 @@
 				A4D3029F293F60B600D2E696 /* AddProducts.swift */,
 				A491DFED2950E2B5005F12AF /* RatingView.swift */,
 				A40D41CA29058DB200E65B36 /* ProductDetail.swift */,
+				A4C571C92952190C00ADD5BC /* ReviewSend.swift */,
 				A450DBD729375C8300824637 /* BasketView.swift */,
 				A4D3029B293F397600D2E696 /* PaymentButton.swift */,
 				A491DFEB2950D925005F12AF /* PaymentCompleted.swift */,
@@ -349,6 +352,7 @@
 				03EEDC9F28DD7F2F00C5FEC3 /* kaspiShop.xcdatamodeld in Sources */,
 				03FF888228ECB2F60099AB3A /* AuthDemo.swift in Sources */,
 				A41C96B228F15A4A00F593DF /* MainPage.swift in Sources */,
+				A4C571CA2952190C00ADD5BC /* ReviewSend.swift in Sources */,
 				03DC0809292E62F600E5AECA /* Favourite.swift in Sources */,
 				A450DBD6293751F300824637 /* Basket.swift in Sources */,
 				A450DC16293773F000824637 /* Product.swift in Sources */,
